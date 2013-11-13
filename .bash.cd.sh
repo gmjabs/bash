@@ -114,6 +114,8 @@ _dirs() {
 _cdHistComplete()   
 {
   local cur
+  local DPATH
+  local COMPDIRS
 
   cur=${COMP_WORDS[COMP_CWORD]}
 
