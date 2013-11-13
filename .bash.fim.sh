@@ -8,7 +8,7 @@ _fimComplete()
 
   cur=${COMP_WORDS[COMP_CWORD]}
 
-  # only look through history if we're not going to complete a local subdirectory
+  # only find if we're not matching a path in the current directory
   COMPFILES=( $(compgen -o filenames $cur) )
 
   if [ ${#COMPFILES[*]} == 0 ] ; then
